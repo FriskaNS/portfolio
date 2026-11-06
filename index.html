@@ -52,41 +52,37 @@
     <main>
 
         <section id="about" class="py-5">
-            <div class="container">
-                <div class="row align-items-center justify-content-center g-5">
+            <div class="col-10 col-sm-7 col-md-5 text-center">
+                <img
+                    src="<?php echo htmlspecialchars($profile['foto']); ?>"
+                    alt="Foto profil"
+                    class="img-fluid rounded-circle shadow"
+                    width="320"
+                    height="320"
+                >
+            </div>
 
-                    <div class="col-10 col-sm-7 col-md-5 text-center">
-                        <img
-                            src="assets/photo_profile.jpeg"
-                            alt="Foto profil "
-                            class="img-fluid rounded-circle shadow"
-                            width="320"
-                            height="320"
-                        >
-                    </div>
+            <div class="col-12 col-md-7">
+                <p class="text-secondary fw-semibold mb-2">
+                    HELLO, I'M
+                </p>
 
-                    <div class="col-12 col-md-7">
-                        <p class="text-secondary fw-semibold mb-2">
-                            HELLO, I'M
-                        </p>
+                <h1 class="display-4 fw-bold">
+                    <?php echo htmlspecialchars($profile['nama']); ?> !!
+                </h1>
 
-                        <h1 class="display-4 fw-bold">Friska !!</h1>
+                <h2 class="h4 text-secondary mb-3">
+                    <?php echo htmlspecialchars($profile['status']); ?>
+                </h2>
 
-                        <h2 class="h4 text-secondary mb-3">
-                            Informatics Student
-                        </h2>
+                <p class="text-muted mb-4">
+                    <?php echo htmlspecialchars($profile['deskripsi']); ?>
+                </p>
 
-                        <p class="text-muted mb-4">
-                            Saya adalah mahasiswa Teknik Informatika yang tertarik dengan AI (Artificial Intelligence).
-                            Saya suka mempelajari hal baru dan mendengarkan musik serta minum kopi yang menjadi kebiasaan saya sehari-hari.
-                        </p>
-
-                        <a href="#contact" class="btn btn-contact px-4 py-2" style="background-color: #4F5D4E; color: #F5F2EB; border-color: #4F5D4E;">
-                            Contact Me
-                        </a>
-                    </div>
-
-                </div>
+                <a href="#contact" class="btn btn-contact px-4 py-2"
+                style="background-color: #4F5D4E; color: #F5F2EB; border-color: #4F5D4E;">
+                    Contact Me
+                </a>
             </div>
         </section>
 
@@ -249,7 +245,7 @@
 
 
         <section id="contact" class="py-5 bg-#F5F2EB">
-        <div class="container">
+        <div class="c`ontainer">
             <div class="text-center mb-5">
             <p class="text-secondary fw-semibold mb-1">Let's Connect</p>
             <h2 class="fw-bold">Contact Me</h2>
